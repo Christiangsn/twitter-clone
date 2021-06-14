@@ -1,6 +1,7 @@
 import React from 'react';
+import ProfilePage from '../ProfilePage';
 
-import { Container, Header, BackIcon, ProfileInfo } from './styles';
+import { Container, Header, BackIcon, ProfileInfo, BottomMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon} from './styles';
 
 const Main: React.FC = () => {
   return (
@@ -12,18 +13,18 @@ const Main: React.FC = () => {
 
               <ProfileInfo>
                   <strong>Christian Guimarães</strong>
-                  <span>612 Tweets </span>
+                  <span>1042 Tweets</span>
               </ProfileInfo>
           </Header>
 
           {/* <ProfilePage /> */}
 
-          {/* <BottomMenu>
-            <HomeIcon />
+          <BottomMenu>
+            <HomeIcon className="active" />
             <SearchIcon />
             <BellIcon />
             <EmailIcon />
-          </BottomMenu> */}
+          </BottomMenu>
 
       </Container>
   )
