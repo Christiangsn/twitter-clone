@@ -3,17 +3,17 @@ import React from 'react';
 import { Container, Wrapper } from './styles';
 import Main from '../Main';
 
-const layout: React.FC = () => {
+export const Layout: React.FC = () => {
   return (
-      <container>
-          <Wapper>
-              <MenuBar />
+      <Container>
+          <Wrapper>
+              {/* <MenuBar /> */}
               <Main />
-              <SideBar />
-          </Wapper>
-      </container>
+              {/* <SideBar /> */}
+          </Wrapper>
+      </Container>
 
   );
 }
 
-export default layout;
+export default Layout;
